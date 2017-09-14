@@ -61,7 +61,7 @@ def deleteRow(code):
     deleteStatus = (cursor.rowcount)
     #depending on if rows were affected or not a message will print
     if deleteStatus == 0:
-        print("This product in not in the database")
+        print("This product is not in the database")
     elif deleteStatus == 1:
         print("Row was deleted")
     conn.commit()
